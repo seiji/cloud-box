@@ -118,7 +118,7 @@ module Cloud
           uploader.finish(dst_path.to_s, true)
           exit
         else
-#          @dropbox.put_file(dst_path.to_s, src_path.open)
+          @dropbox.put_file(dst_path.to_s, src_path.open)
         end
       end
     end
