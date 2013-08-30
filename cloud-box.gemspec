@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'clowd-box/version'
+require 'cloud-box/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "clowd-box"
-  gem.version       = Clowd::Box::VERSION
+  gem.name          = "cloud-box"
+  gem.version       = Cloud::Box::VERSION
   gem.authors       = ["Seiji Toyama"]
   gem.email         = ['seijit@me.com']
   gem.description   = %q{TODO: Write a gem description}

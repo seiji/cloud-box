@@ -1,7 +1,7 @@
 require 'thor'
 require 'dropbox_sdk'
 
-module Clowd
+module Cloud
   module Box
     class CLI < Thor
       CHUNK_SIZE = 4*1024*1024

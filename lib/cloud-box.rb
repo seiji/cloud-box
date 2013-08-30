@@ -1,8 +1,8 @@
-require "clowd-box/version"
-require "clowd-box/cli"
+require "cloud-box/version"
+require "cloud-box/cli"
 require "yaml"
 
-module Clowd
+module Cloud
   module Box
     def self.root
       File.expand_path '../..', __FILE__
@@ -17,7 +17,7 @@ module Clowd
     end
   end
 
-  DROPBOX_YAML = File.join(Clowd::Box.root, 'private', 'config', 'dropbox.yml')
+  DROPBOX_YAML = File.join(Cloud::Box.root, 'private', 'config', 'dropbox.yml')
   DROPBOX_CONFIG = YAML.load_file(DROPBOX_YAML)["production"]
 
 end
